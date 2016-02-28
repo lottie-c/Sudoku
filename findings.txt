@@ -1,0 +1,33 @@
+Summarise your findings here (see specification).
+
+
+Question 5. 
+
+mystery2.dat contains the board that is impossible to solve.
+
+I have interpreted 'difficulty' as follows. 
+
+  When the program comes to a square there are only so many digits
+  that 'make_move' can actually place in said square. The more digits
+  that it is possible to place the more difficult the puzzle is. 
+  Using this logic I have used the number of times in the
+  solve_board() function that the make_move() function
+  returns true as a measure of how computationally expensive a puzzle
+  is and hence discern its difficulty. 
+
+  I set up a the function solve_board_counter() to return how
+  many times make_move() placed a digit; the higher the counter the
+  higher the difficulty. The readings from the mystery data files are
+  as follows;
+
+  data	  mystery1.dat	mystery3.dat
+  reading 421546	14133.
+
+  From this I think that mystery1.dat contains the 'extremely hard'
+  puzzle as the counter read 421546.
+
+  Then mystery3.dat contains the 'hard' puzzle, with the counter
+  reading 14133. 
+
+
+  

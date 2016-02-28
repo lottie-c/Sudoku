@@ -1,0 +1,11 @@
+-*- mode: compilation; default-directory: "~/mcslab_1_cmc115/" -*-
+Compilation started at Mon Oct 26 16:44:38
+
+make -k 
+g++ -g main.o sudoku.o -o sudoku
+sudoku.o:(.bss+0x0): multiple definition of `count'
+main.o:(.bss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [sudoku] Error 1
+
+Compilation exited abnormally with code 2 at Mon Oct 26 16:44:38

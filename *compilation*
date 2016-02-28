@@ -1,0 +1,35 @@
+-*- mode: compilation; default-directory: "~/mcslab_1_cmc115/" -*-
+Compilation started at Mon Oct 26 16:43:56
+
+make -k 
+g++ -Wall -c main.cpp
+main.cpp:58:23: warning: multi-character character constant [-Wmultichar]
+   if (!make_move("I8",'10', board)) 
+                       ^
+main.cpp: In function ‘int main()’:
+main.cpp:46:33: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+   if (!make_move("I8",'1', board)) 
+                                 ^
+main.cpp:52:33: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+   if (!make_move("K8",'1', board)) 
+                                 ^
+main.cpp:58:34: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+   if (!make_move("I8",'10', board)) 
+                                  ^
+main.cpp:58:34: warning: overflow in implicit constant conversion [-Woverflow]
+main.cpp:65:33: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+   if (!make_move("D1",'2', board)) 
+                                 ^
+main.cpp:71:33: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+   if (!make_move("B4",'8', board)) 
+                                 ^
+main.cpp:77:33: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+   if (!make_move("B8",'3', board)) 
+                                 ^
+g++ -g main.o sudoku.o -o sudoku
+sudoku.o:(.bss+0x0): multiple definition of `count'
+main.o:(.bss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [sudoku] Error 1
+
+Compilation exited abnormally with code 2 at Mon Oct 26 16:43:56
